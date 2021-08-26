@@ -1,0 +1,12 @@
+<a href="/items/home/"><h2>Home</h2></a>
+
+{% if recipe %}
+    {% for item in recipe %}
+        <a href="/items/{{item.id}}/details/"> {{item.name}}</a> &nbsp; 
+    {% endfor %}
+{% else %}
+<p>No data created</p>
+{% endif %}
+<br>
+<br><a href="/items/create/"><h3>Add Recipe</h3></a>
+

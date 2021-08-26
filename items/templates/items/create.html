@@ -1,0 +1,13 @@
+<a href="/items/home"><h2>Home</h2></a>
+
+<form action="/items/data/" method="post" enctype="multipart/form-data">
+
+    {% csrf_token %}
+    name: <input type="text" name="name" placeholder="recipe name"><br>
+    ingredients : <input type="text" name="ingredients" placeholder="ingredients"><br>
+    process : <input type="text" name="process" placeholder="enter the process"><br>
+
+    <input type="submit" value="Submit"> &nbsp;
+    <br>
+   &nbsp; <br><a href="/items/recipe_list"> BACK </a>
+</form>
